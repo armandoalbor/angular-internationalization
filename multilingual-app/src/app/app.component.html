@@ -7,26 +7,20 @@
                 also Login using social</p>
             <br>
             <p i18n="@@paragraphtext">Login with social media</p>
-            <!-- <p i18n="@@labelAllotment">The message is { message, select, Max Capacity {people} Max Adults Capacity
-                {adults} Max Kids Capacity {minors} other {people}} </p> -->
-                
 
-            <a class="fb" href="https://ccp.cloudaccess.net/aff.php?aff=5188" target="_blank"><span i18n="fbLogin">Login With Facebook</span></a>
-            <a class="tw" href="https://ccp.cloudaccess.net/aff.php?aff=5188" target="_blank"><span i18n="twLogin">Login With Twitter</span></a>
+            <a class="fb" href="" ><span i18n="fbLogin">Login With Facebook</span></a>
+            <a class="tw" href="" ><span i18n="twLogin">Login With Twitter</span></a>
 
         </div>
-        <!--col-sm-6-->
 
         <div class="col-sm-6 right-side">
             <h1 i18n="@@loginheader">Login</h1>
             <p i18n="@@paragraphtext">Don't have an account? Create your account, it takes less than a minute</p>
 
-            <!--Form with header-->
             <div class="form">
                 <div class="form-group">
                     <label i18n="@@labelText" for="form2">Your email</label>
                     <input type="text" id="form2" class="form-control">
-
                 </div>
 
                 <div class="form-group">
@@ -34,8 +28,7 @@
                     <input type="password" id="form4" class="form-control">
                 </div>
 
-                
-                <div *ngIf="message !== 'NoAllotment'">
+                <div *ngIf="!noAllotment">
                     <h5>
                         <strong i18n="@@default-room-unavailable-maxCapacityTitle">Exceeds maximum capacity { message, select, Max Capacity {people} Max Adults
                                 Capacity {adults} Max Kids Capacity {minors} other {people}}.</strong>
@@ -44,7 +37,7 @@
                             Capacity {adults} Max Kids Capacity {minors} other {people}} per room to see availability.</span>
                 </div>
 
-                <div *ngIf="message === 'NoAllotment'">
+                <div *ngIf="noAllotment">
                     <h5 i18n="@@default-room-unavailable-noAllotmentTitle">
                         <strong>¡You almost reach!</strong> The last room on our page was sold some time ago hours.
                     </h5>
@@ -55,19 +48,11 @@
 
                 <br>
                 <div class="text-xs-center">
-                    <a i18n="@@anchorText" href="http://deepak646.blogspot.in/" target="_blank"
+                    <a i18n="@@anchorText" href=""
                         class="btn btn-deep-purple">Login</a>
                 </div>
 
             </div>
-            <!--/Form with header-->
-
         </div>
-        <!--col-sm-6-->
-
-
     </div>
-    <!--col-sm-8-->
-
 </div>
-<!--container-->

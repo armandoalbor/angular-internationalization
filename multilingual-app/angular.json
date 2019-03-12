@@ -56,10 +56,17 @@
               "outputPath": "dist/my-project-es/",
               "i18nFile": "src/locale/messages.es.xlf",
               "i18nFormat": "xlf",
-              "i18nLocale": "fr",
+              "i18nLocale": "es",
+              "i18nMissingTranslation": "error"
+            },
+            "zh": {
+              "aot": true,
+              "outputPath": "dist/my-project-zh/",
+              "i18nFile": "src/locale/messages.zh.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "zh",
               "i18nMissingTranslation": "error"
             }
-           
           }
         },
         "serve": {
@@ -73,6 +80,9 @@
             },
             "es": {
               "browserTarget": "multilingual-app:build:es"
+            },
+            "zh": {
+              "browserTarget": "multilingual-app:build:zh"
             }
           }
         },

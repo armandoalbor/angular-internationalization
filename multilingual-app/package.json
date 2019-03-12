@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "start:es": "ng serve --aot --i18nFile=src/locale/messages.es.xlf --i18nFormat=xlf --locale es",
+    "start:zh": "ng serve --aot --i18nFile=src/locale/messages.zh.xlf --i18nFormat=xlf --locale zh",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
