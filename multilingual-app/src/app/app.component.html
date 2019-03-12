@@ -1,45 +1,73 @@
 <div class="container">
-	    
-  <div class="col-sm-8 col-sm-offset-2 main">
-  <div class="col-sm-6 left-side">
-  <h1 i18n="@@appTitle">Hello<br>World.</h1>
-  <p i18n="@@paragraphtext">Welcome to My App Login page. User can login by using there credentials They can also Login using social</p>
-  <br>
-  <p i18n="@@paragraphtext">Login with social media</p>
-  <a class="fb" href="https://ccp.cloudaccess.net/aff.php?aff=5188" target="_blank">Login With Facebook</a>
-  <a class="tw" href="https://ccp.cloudaccess.net/aff.php?aff=5188" target="_blank">Login With Twitter</a>
 
-  </div><!--col-sm-6-->
-  
-  <div class="col-sm-6 right-side">
-  <h1 i18n="@@loginheader">Login</h1>
-  <p i18n="@@paragraphtext">Don't have an account? Create your account, it takes less than a minute</p>
-  
-<!--Form with header-->
-<div class="form">
-      <div class="form-group">
-      <label i18n="@@labelText" for="form2">Your email</label>
-          <input type="text" id="form2" class="form-control">
-          
-      </div>
+    <div class="col-sm-8 col-sm-offset-2 main">
+        <div class="col-sm-6 left-side">
+            <h1 i18n="@@appTitle">Hello<br>World.</h1>
+            <p i18n="@@paragraphtext">Welcome to My App Login page. User can login by using there credentials They can
+                also Login using social</p>
+            <br>
+            <p i18n="@@paragraphtext">Login with social media</p>
+            <!-- <p i18n="@@labelAllotment">The message is { message, select, Max Capacity {people} Max Adults Capacity
+                {adults} Max Kids Capacity {minors} other {people}} </p> -->
+                
 
-      <div class="form-group">
-      <label i18n="@@labelText2" for="form4">Your password</label>
-          <input type="password" id="form4" class="form-control">
-         
-      </div>
+            <a class="fb" href="https://ccp.cloudaccess.net/aff.php?aff=5188" target="_blank"><span i18n="fbLogin">Login With Facebook</span></a>
+            <a class="tw" href="https://ccp.cloudaccess.net/aff.php?aff=5188" target="_blank"><span i18n="twLogin">Login With Twitter</span></a>
 
-      <div class="text-xs-center">
-          <a i18n="@@anchorText" href="http://deepak646.blogspot.in/" target="_blank" class="btn btn-deep-purple">Login</a>
-      </div>
+        </div>
+        <!--col-sm-6-->
 
+        <div class="col-sm-6 right-side">
+            <h1 i18n="@@loginheader">Login</h1>
+            <p i18n="@@paragraphtext">Don't have an account? Create your account, it takes less than a minute</p>
+
+            <!--Form with header-->
+            <div class="form">
+                <div class="form-group">
+                    <label i18n="@@labelText" for="form2">Your email</label>
+                    <input type="text" id="form2" class="form-control">
+
+                </div>
+
+                <div class="form-group">
+                    <label i18n="@@labelText2" for="form4">Password</label>
+                    <input type="password" id="form4" class="form-control">
+                </div>
+
+                
+                <div *ngIf="message !== 'NoAllotment'">
+                    <h5>
+                        <strong i18n="@@default-room-unavailable-maxCapacityTitle">Exceeds maximum capacity { message, select, Max Capacity {people} Max Adults
+                                Capacity {adults} Max Kids Capacity {minors} other {people}}.</strong>
+                    </h5>
+                    <span i18n="@@default-room-unavailable-maxCapacityBody">Try changing the number of { message, select, Max Capacity {people} Max Adults
+                            Capacity {adults} Max Kids Capacity {minors} other {people}} per room to see availability.</span>
+                </div>
+
+                <div *ngIf="message === 'NoAllotment'">
+                    <h5 i18n="@@default-room-unavailable-noAllotmentTitle">
+                        <strong>¡You almost reach!</strong> The last room on our page was sold some time ago hours.
+                    </h5>
+                    <span i18n="@@default-room-unavailable-noAllotmentBody">Check availability by calling at no cost
+                        <a title="{{ phone }}" href="tel:{{ phone }}">{{ phone }}</a>
+                    </span>
+                </div>
+
+                <br>
+                <div class="text-xs-center">
+                    <a i18n="@@anchorText" href="http://deepak646.blogspot.in/" target="_blank"
+                        class="btn btn-deep-purple">Login</a>
+                </div>
+
+            </div>
+            <!--/Form with header-->
+
+        </div>
+        <!--col-sm-6-->
+
+
+    </div>
+    <!--col-sm-8-->
 
 </div>
-<!--/Form with header-->
-
-  </div><!--col-sm-6-->
-  
-  
-      </div><!--col-sm-8-->
-      
-      </div><!--container-->
+<!--container-->

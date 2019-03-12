@@ -58,7 +58,7 @@ box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.24);}
 box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.24);}
 	
 	.right-side{
-	padding:30px 0px 100px;
+	padding:30px 0px 0px;
 	background:#FFF;
 	background-size:cover;
 	min-height:514px;

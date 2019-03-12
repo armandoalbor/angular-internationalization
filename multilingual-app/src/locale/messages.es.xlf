@@ -4,70 +4,142 @@
     <body>
       <trans-unit id="appTitle" datatype="html">
         <source>Hello<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>World.</source>
-        <target> 
-        Hola <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Mundo.
-        </target>
+        <target>Hola<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Mundo.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
+  
+      <trans-unit id="0e18fed6a51f86662b4ef4405e0ffabe35abe878" datatype="html">
+        <source>Login With Facebook</source>
+        <target>Entrar con Facebook</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">fbLogin</note>
+      </trans-unit>
+
+      <trans-unit id="c0888bc3a9d246a9d251c6cbb88741d0bcaf4cfa" datatype="html">
+        <source>Login With Twitter</source>
+        <target>Entrar con Twitter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">twLogin</note>
+      </trans-unit>
+
       <trans-unit id="paragraphtext" datatype="html">
-        <source>Welcome to My App Login page. User can login by using there credentials They can also Login using social.</source>
-        <target>
-          Bienvenido a la página de inicio de sesión de mi aplicación. El usuario puede iniciar sesión usando credenciales allí. También pueden iniciar sesión usando redes sociales.
-        </target>
+        <source>Welcome to My App Login page. User can login by using there credentials They can
+                also Login using social</source>
+        <target>Bienvenido a la página de inicio de sesión de mi aplicación. El usuario puede iniciar sesión usando credenciales allí. 
+        También pueden iniciar sesión usando redes sociales.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
           <context context-type="linenumber">6</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
-          <context context-type="linenumber">8</context>
+          <context context-type="linenumber">9</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="loginheader" datatype="html">
         <source>Login</source>
-        <target>
-            Iniciar sesión
-        </target>
+        <target> Iniciar sesión </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="labelText" datatype="html">
         <source>Your email</source>
-        <target>
-        Tu correo electrónico
-        </target>
+        <target> Tu correo electrónico </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="labelText2" datatype="html">
-        <source>Your password</source>
-        <target>
-        Tu contraseña
-        </target>
+        <source>Password</source>
+        <target> Tu contraseña </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="anchorText" datatype="html">
-        <source>Login</source>
+
+
+      <trans-unit id="default-room-unavailable-maxCapacityTitle" datatype="html">
+        <source>Exceeds maximum capacity <x id="ICU" equiv-text="{ message, select, Max Capacity {...} Max Adults Capacity {...} Max Kids Capacity {...} other {...}}"/>.</source>
+        <target>Excede capacidad máxima de <x id="ICU" equiv-text="{ message, select, Max Capacity {...} Max Adults Capacity {...} Max Kids Capacity {...} other {...}}"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1875b1bf5b52cbbac1dcbaf6077f12f0ed996d75" datatype="html">
+        <source>{VAR_SELECT, select, Max Capacity {people} Max Adults Capacity {adults} Max Kids Capacity {minors} other {people} }</source>
+        <target>{VAR_SELECT, select, Max Capacity {personas} Max Adults Capacity {adultos} Max Kids Capacity {menores} other {personas} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="default-room-unavailable-maxCapacityBody" datatype="html">
+        <source>Try changing the number of <x id="ICU" equiv-text="{ message, select, Max Capacity {...} Max Adults Capacity {...} Max Kids Capacity {...} other {...}}"/> per room to see availability.</source>
+        <target>Intenta cambiando el número de <x id="ICU" equiv-text="{ message, select, Max Capacity {...} Max Adults Capacity {...} Max Kids Capacity {...} other {...}}"/> por habitación para ver disponibilidad.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3f3bee9369b95f4905da21aa6a59e9f7f8bb6e08" datatype="html">
+        <source>{VAR_SELECT, select, Max Capacity {people} Max Adults Capacity {adults} Max Kids Capacity {minors} other {people} }</source>
+        <target>{VAR_SELECT, select, Max Capacity {personas} Max Adults Capacity {adultos} Max Kids Capacity {menores} other {personas} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="default-room-unavailable-noAllotmentTitle" datatype="html">
+        <source>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>¡You almost reach!<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> The last room on our page was sold some time ago hours.
+        </source>
         <target>
-        Iniciar sesión
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>¡Por poco alcanzas!<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> La última habitación en nuestra página se vendió hace algunas horas.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="default-room-unavailable-noAllotmentBody" datatype="html">
+        <source>
+          Check availability by calling at no cost <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION" equiv-text="{{ phone }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          Consulta la disponibilidad llamando sin costo al <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION" equiv-text="{{ phone }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="anchorText" datatype="html">
+        <source>Login</source>
+        <target> Iniciar sesión </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
     </body>
